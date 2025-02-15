@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Setup Guide
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the Repository (Local Setup)
+
+To get started, open a terminal and run the following command to clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/JrGaddam/cook_note.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate into the project directory:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd cook_note
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Running the Project Locally
 
-## Learn More
+Before running the project, make sure you have all the dependencies installed (if applicable). Follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+#### Using Node.js:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Running in GitHub Codespaces
 
-## Deploy on Vercel
+If you prefer not to set up the project locally, you can run it directly in GitHub Codespaces:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Go to the repository on GitHub.
+2. Click the **"Code"** button and select **"Open with Codespaces"**.
+3. If no Codespace exists, create a new one.
+4. Wait for the environment to initialize, then start working!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. Keeping Your Repository Updated
+
+To ensure you have the latest changes, run the following commands:
+
+```bash
+git pull origin main
+```
+
+If you make changes and want to push them back:
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
