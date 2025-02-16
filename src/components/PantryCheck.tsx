@@ -16,8 +16,10 @@ export default function PantryCheck({ onIngredientsChange }: PantryCheckProps) {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    onIngredientsChange?.(selectedIngredients.map(ing => ing.name));
-  }, [selectedIngredients, onIngredientsChange]);
+    if (selectedIngredients.length > 0) {
+      onIngredientsChange?.(selectedIngredients.map(ing => ing.name));
+    }
+  }, [selectedIngredients]);
 
   // Debounced search function
   const searchIngredients = useCallback(
